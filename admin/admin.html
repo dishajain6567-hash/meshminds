@@ -33,7 +33,7 @@
 <main style="max-width:1100px;margin:20px auto;padding:0 16px;">
 <div class="card">
 
-  <!-- LOGIN UI -->
+  <!-- LOGIN -->
   <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap">
     <div><strong>Signed in as:</strong> <span id="signedAs">Not signed in</span></div>
 
@@ -46,7 +46,7 @@
   </div>
 </div>
 
-<!-- DROPDOWN SECTION -->
+<!-- DROPDOWNS -->
 <div class="card" style="margin-top:16px;">
   <h3>Select Course / Branch / Semester / Subject</h3>
 
@@ -63,7 +63,7 @@
     <input id="newSubject" placeholder="Add new subject">
     <button id="addSubjectBtn" class="glow-btn">Add Subject</button>
 
-    <!-- Manage Uploads Button (admin only) -->
+    <!-- FIXED PATH -->
     <button id="manageBtn" class="glow-btn" style="display:none;">Manage Uploads</button>
   </div>
 </div>
@@ -78,7 +78,7 @@
     <div class="tab" data-tab="practicals">Practicals</div>
   </div>
 
-  <!-- SYLLABUS -->
+  <!-- PANELS -->
   <div id="syllabus" class="tabpanel active">
     <textarea id="s_u1" rows="2" placeholder="Unit 1"></textarea>
     <textarea id="s_u2" rows="2" placeholder="Unit 2"></textarea>
@@ -88,7 +88,6 @@
     <span id="s_msg"></span>
   </div>
 
-  <!-- NOTES -->
   <div id="notes" class="tabpanel">
     <input id="n_title" placeholder="Notes title">
     <textarea id="n_desc" rows="2" placeholder="Description"></textarea>
@@ -97,7 +96,6 @@
     <span id="n_msg"></span>
   </div>
 
-  <!-- PYQ -->
   <div id="pyq" class="tabpanel">
     <input id="p_title" placeholder="PYQ title">
     <input id="p_link" placeholder="Drive link">
@@ -105,7 +103,6 @@
     <span id="p_msg"></span>
   </div>
 
-  <!-- VIDEOS -->
   <div id="videos" class="tabpanel">
     <input id="v_title" placeholder="Video / Playlist Title">
     <input id="v_link" placeholder="YouTube link">
@@ -113,7 +110,6 @@
     <span id="v_msg"></span>
   </div>
 
-  <!-- PRACTICALS -->
   <div id="practicals" class="tabpanel">
     <input id="r_title" placeholder="Practical Title">
     <textarea id="r_desc" rows="2" placeholder="Procedure / Info"></textarea>
@@ -126,8 +122,9 @@
 
 </main>
 
-<script type="module" src="../js/admin-common.js"></script>
+<!-- FIXED LOAD ORDER -->
 <script type="module" src="../js/firebase.js"></script>
+<script type="module" src="../js/admin-common.js"></script>
 <script type="module" src="../js/theme.js"></script>
 
 </body>
